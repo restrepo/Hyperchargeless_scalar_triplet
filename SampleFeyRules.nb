@@ -1,0 +1,161 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5623,        151]
+NotebookOptionsPosition[      4885,        122]
+NotebookOutlinePosition[      5219,        137]
+CellTagsIndexPosition[      5176,        134]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$FeynRulesPath", "=", 
+   RowBox[{
+   "SetDirectory", "[", "\"\</home/restrepo/prog/feynrules-current\>\"", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "FeynRules`"}]}], "Input",
+ CellChangeTimes->{{3.895627397913969*^9, 3.895627403713664*^9}, {
+  3.89562745173433*^9, 3.8956274814932013`*^9}, {3.895627519896079*^9, 
+  3.8956275805103083`*^9}, {3.8956276192062273`*^9, 3.8956276216449623`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\" - FeynRules - \"\>"], "Print",
+ CellChangeTimes->{3.895627622508898*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Version: \"\>", "\[InvisibleSpace]", "\<\"2.3.49\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"\<\" (\"\>", " ", "\<\"29 September 2021\"\>"}], 
+   "\[InvisibleSpace]", "\<\").\"\>"}],
+  SequenceForm["Version: ", "2.3.49", " (" "29 September 2021", ")."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.895627622509532*^9}],
+
+Cell[BoxData["\<\"Authors: A. Alloul, N. Christensen, C. Degrande, C. Duhr, \
+B. Fuks\"\>"], "Print",
+ CellChangeTimes->{3.8956276225100594`*^9}],
+
+Cell[BoxData["\<\" \"\>"], "Print",
+ CellChangeTimes->{3.895627622510477*^9}],
+
+Cell[BoxData["\<\"Please cite:\"\>"], "Print",
+ CellChangeTimes->{3.895627622510828*^9}],
+
+Cell[BoxData["\<\"    - Comput.Phys.Commun.185:2250-2300,2014 \
+(arXiv:1310.1921);\"\>"], "Print",
+ CellChangeTimes->{3.895627622511178*^9}],
+
+Cell[BoxData["\<\"    - Comput.Phys.Commun.180:1614-1641,2009 \
+(arXiv:0806.4194).\"\>"], "Print",
+ CellChangeTimes->{3.895627622511643*^9}],
+
+Cell[BoxData["\<\" \"\>"], "Print",
+ CellChangeTimes->{3.8956276225120296`*^9}],
+
+Cell[BoxData["\<\"http://feynrules.phys.ucl.ac.be\"\>"], "Print",
+ CellChangeTimes->{3.8956276225123777`*^9}],
+
+Cell[BoxData["\<\" \"\>"], "Print",
+ CellChangeTimes->{3.895627622512803*^9}],
+
+Cell[BoxData["\<\"The FeynRules palette can be opened using the command \
+FRPalette[].\"\>"], "Print",
+ CellChangeTimes->{3.89562762251315*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CloudConnect","verr",
+   "\"This version of \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Mathematica\\\\\\\"\\\"}]\\) is no longer \
+supported for use with the Wolfram Cloud beginning \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Wed 1 Dec 2021\\\\\\\"\\\"}]\\). \
+\\!\\(\\*TemplateBox[List[\\\"\\\\\\\"Please \\\\\\\"\\\", \
+TagBox[ButtonBox[PaneSelectorBox[List[Rule[False, \\\"\\\\\\\"upgrade your \
+license\\\\\\\"\\\"], Rule[True, StyleBox[\\\"\\\\\\\"upgrade your \
+license\\\\\\\"\\\", List[\\\"HyperlinkActive\\\"]]]], \
+Dynamic[CurrentValue[\\\"MouseOver\\\"]], Rule[BaseStyle, \
+List[\\\"Hyperlink\\\"]], Rule[FrameMargins, 0], Rule[ImageSize, Automatic]], \
+Rule[BaseStyle, \\\"Hyperlink\\\"], Rule[ButtonData, \
+List[URL[\\\"https://store.wolfram.com/view/app/mathematica/upgrade?license=\
+L0000-0000\\\"], None]], Rule[ButtonNote, \
+\\\"https://store.wolfram.com/view/app/mathematica/upgrade?license=L0000-0000\
+\\\"]], Function[Annotation[Slot[1], \
+\\\"https://store.wolfram.com/view/app/mathematica/upgrade?license=L0000-0000\
+\\\", \\\"Hyperlink\\\"]]], \\\"\\\\\\\" or \\\\\\\"\\\", \
+TagBox[ButtonBox[PaneSelectorBox[List[Rule[False, \\\"\\\\\\\"contact \
+us\\\\\\\"\\\"], Rule[True, StyleBox[\\\"\\\\\\\"contact us\\\\\\\"\\\", \
+List[\\\"HyperlinkActive\\\"]]]], Dynamic[CurrentValue[\\\"MouseOver\\\"]], \
+Rule[BaseStyle, List[\\\"Hyperlink\\\"]], Rule[FrameMargins, 0], \
+Rule[ImageSize, Automatic]], Rule[BaseStyle, \\\"Hyperlink\\\"], \
+Rule[ButtonData, \
+List[URL[\\\"https://www.wolfram.com/contact-us?description=L0000-0000+is+no+\
+longer+supported+for+use+with+the+Wolfram+Cloud+beginning+Wed+1+Dec+2021.\\\"]\
+, None]], Rule[ButtonNote, \
+\\\"https://www.wolfram.com/contact-us?description=L0000-0000+is+no+longer+\
+supported+for+use+with+the+Wolfram+Cloud+beginning+Wed+1+Dec+2021.\\\"]], \
+Function[Annotation[Slot[1], \
+\\\"https://www.wolfram.com/contact-us?description=L0000-0000+is+no+longer+\
+supported+for+use+with+the+Wolfram+Cloud+beginning+Wed+1+Dec+2021.\\\", \
+\\\"Hyperlink\\\"]]], \\\"\\\\\\\".\\\\\\\"\\\"], \\\"RowDefault\\\"]\\)\"",2,
+   4,3,34498685345996968163,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.895627429573579*^9, {3.8956275419502993`*^9, 3.895627557402093*^9}, {
+   3.895627598395444*^9, 3.8956276242377043`*^9}}]
+}, Open  ]]
+},
+WindowSize->{808, 911},
+WindowMargins->{{556, Automatic}, {4, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 447, 9, 55, "Input"],
+Cell[CellGroupData[{
+Cell[1052, 35, 91, 1, 24, "Print"],
+Cell[1146, 38, 374, 8, 24, "Print"],
+Cell[1523, 48, 145, 2, 24, "Print"],
+Cell[1671, 52, 77, 1, 24, "Print"],
+Cell[1751, 55, 88, 1, 24, "Print"],
+Cell[1842, 58, 140, 2, 24, "Print"],
+Cell[1985, 62, 140, 2, 24, "Print"],
+Cell[2128, 66, 79, 1, 24, "Print"],
+Cell[2210, 69, 109, 1, 24, "Print"],
+Cell[2322, 72, 77, 1, 24, "Print"],
+Cell[2402, 75, 143, 2, 24, "Print"]
+}, Open  ]],
+Cell[2560, 80, 2309, 39, 45, "Message"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
